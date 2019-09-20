@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HNG</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    img {
+        height: 100%;
+        width: auto;
+    }
+    
+    
+    .phrase {
+        position: relative;
+        bottom: 320px;
+        left: 18px;
+        text-align: center;
+        line-height: 35px;
+        color: rgb(18, 4, 54);
+
+    }
+
+    .phrase p {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .phrase h1 {
+        color: #fff;
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    .login-card {
+       margin: 80px auto;
+        min-height: 200px;
+        padding: 30px 20px;
+     }
+
+     .login-card h3 {
+        color: rgb(18, 4, 54);
+        text-align: center;
+     }
+    
+     .inputs input {
+        display: block;
+        margin: 10px 0px;
+        height: 30px;
+        width: 100%;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+    }
+
+    .inputs input::placeholder {
+        color: #f2f2f2;
+        padding: 5px;
+    }
+    button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        background: rgb(24, 24, 238);
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .login-card a {
+        text-decoration: none;
+        color: skyblue;
+    }
+
+    .bottom-text {
+        font-size: 0.8em;
+        line-height: 25px;
+        text-align: center;
+    }
+   </style>
+</head>
+<body>
+    <div id="container">
+        <div class="overlay">
+            <img src="./img/image2.png" alt="">
+            <div class="phrase">
+                <h1>PHOENIX</h1>
+                <p>Welcome to colaboration</p>
+            </div>
+        </div>
+        <div class="login-card">
+                <h3>Login to Phoenix</h3>
+            <div class="inputs">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="password">
+            </div>
+                <button>Login</button>
+            <div class="bottom-text">    
+                <input type="checkbox" name="" id="check" checked>Remember me. <a href="">Forgot password?</a>
+                <p>New to Phoenix? &nbsp;&nbsp; <a href="">Sign up now!</a></p> 
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
